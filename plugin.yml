@@ -17,7 +17,7 @@ permissions:
     children:
       notell.toggle:
         description: "Allows the player to toggle NoTell mode"
-        default: false
+        default: true
         children:
           notell.toggle.self:
             description: "Allows the player to toggle NoTell mode for themselves"
