@@ -1,6 +1,6 @@
 <?php
 
-namespace NoTell\notell;
+namespace VMPE\notell;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
