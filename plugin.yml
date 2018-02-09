@@ -1,0 +1,24 @@
+name: NoTell
+main: VMPE\notell\Main
+version: 1.0.0-BETA
+api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
+load: POSTWORLD
+author: VMPE Development Team
+website: Not showing.
+commands:
+ notell:
+  description: "Toggles Private messages mode for yourself"
+  usage: "/notell"
+  permission: notell.toggle
+permissions:
+  notell:
+    description: "Allows access to all NoTell features"
+    default: op
+    children:
+      notell.toggle:
+        description: "Allows the player to toggle NoTell mode"
+        default: false
+        children:
+          notell.toggle.self:
+            description: "Allows the player to toggle NoTell mode for themselves"
+            default: true
