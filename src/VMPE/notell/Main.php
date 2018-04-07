@@ -28,9 +28,9 @@ class Main extends PluginBase implements Listener {
             }
 
             if (isset($this->enabled[strtolower($issuer->getName())])) {
-                $issuer->sendMessage("NoTell mode enabled!");
+                $issuer->sendMessage("§6People will no longer be able to /tell you! :D");
             } else {
-                $issuer->sendMessage("NoTell mode disabled!");
+                $issuer->sendMessage("§cPeople are now able to use /tell to mesage you again. :D");
             }
             return true;
         } else {
@@ -51,13 +51,13 @@ class Main extends PluginBase implements Listener {
             foreach ($this->enabled as $notelluser) {
 
                 if ((strpos(strtolower($notelluser), strtolower($args[1])) !== false) && (strtolower($notelluser) !== strtolower($sender->getName()))) {
-                    $sender->sendMessage(TextFormat::RED . "§5This Player Is Not Accepting private messages");
+                    $sender->sendMessage(TextFormat::RED . "§cThis player is not online.");
                     $event->setCancelled(true);
                     return;
                 }
 
                 if (isset($args[2]) && strpos(strtolower($notelluser), strtolower($args[2])) !== false && (strtolower($notelluser) !== strtolower($sender->getName()))) {
-                    $sender->sendMessage(TextFormat::RED . "§5This Player Is Not Accepting private messages");
+                    $sender->sendMessage(TextFormat::RED . "§cThis player is not online.");
                     $event->setCancelled(true);
                     return;
                 }
