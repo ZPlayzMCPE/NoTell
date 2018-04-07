@@ -1,7 +1,7 @@
 name: NoTell
 main: VMPE\notell\Main
-version: 1.0.0-BETA
-api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
+version: 1.0.0
+api: [3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.0.0-ALPHA12]
 load: POSTWORLD
 author: VMPE Development Team
 website: Not showing.
